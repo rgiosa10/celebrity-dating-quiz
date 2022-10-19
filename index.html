@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celebrity Dating Quiz</title>
+</head>
+<body>
+  <h1>Which former president are you the most compatible with?</h1>
+
+  <p>Please tell us a little bit about yourself:</p>
+  <form>
+    <p id="errorMessage" class="hidden">Please make sure to input Important or Not Important for each question</p>
+    <label for="honestInput">How important is honesty to you? (Important or Not Important)</label>
+    <input id="honestInput" type="text" name="honestInput">
+
+    <label for="heightInput">How important is height to you? (Important or Not Important)</label>
+    <input id="heightInput" type="text" name="heightInput">
+
+    <label for="ageInput">How important is age to you? (Important or Not Important)</label>
+    <input id="ageInput" type="text" name="ageInput">
+
+    <button type="submit">submit</button>
+
+  </form>
+
+  <div id="lincoln" class="hidden">
+    <p>You are the most compatible with Abraham Lincoln</p>
+    <img src="img/lincoln.jpg" alt="Photo of Abe Lincoln">
+  </div>
+
+  <div id="bush" class="hidden">
+    <p>You are the most compatible with George W. Bush</p>
+    <img src="img/gwb.jpg" alt="Photo of George W. Bush">
+  </div>
+
+  <div id="kennedy" class="hidden">
+    <p>You are the most compatible with John F. Kennedy</p>
+    <img src="img/jfk.jpg" alt="Photo of JFK">
+  </div>
+
+</body>
+</html>
