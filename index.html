@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,18 +14,19 @@
 
   <p>Please tell us a little bit about yourself:</p>
   <form>
-    <p id="errorMessage" class="hidden">Please make sure to input Important or Not Important for each question</p>
-    <label for="honestInput">How important is honesty to you? (Important or Not Important)</label>
-    <input id="honestInput" type="text" name="honestInput">
+    <div class="form-group">
+      <p id="errorMessage" class="hidden">Please make sure to input Important or Not Important for each question</p>
+      <label for="honestInput">How important is honesty to you? (Important or Not Important)</label>
+      <input id="honestInput" type="text" name="honestInput">
 
-    <label for="heightInput">How important is height to you? (Important or Not Important)</label>
-    <input id="heightInput" type="text" name="heightInput">
+      <label for="heightInput">How important is height to you? (Important or Not Important)</label>
+      <input id="heightInput" type="text" name="heightInput">
 
-    <label for="ageInput">How important is age to you? (Important or Not Important)</label>
-    <input id="ageInput" type="text" name="ageInput">
+      <label for="ageInput">How important is age to you? (Important or Not Important)</label>
+      <input id="ageInput" type="text" name="ageInput">
 
-    <button type="submit">submit</button>
-
+      <button type="submit" class="btn btn-primary">submit</button>
+    </div>
   </form>
 
   <div id="lincoln" class="hidden">

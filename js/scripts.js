@@ -3,11 +3,27 @@ window.onload = function() {
   form.onsubmit = function(event) {
     event.preventDefault();
 
-    const honestInput = document.getElementById("honestInput").value;
-    const heightInput = document.getElementById("heightInput").value;
-    const ageInput = document.getElementById("ageInput").value;
+    const honestInput = document.getElementById("honestInput").value.toLowerCase();
+    const heightInput = document.getElementById("heightInput").value.toLowerCase();
+    const ageInput = document.getElementById("ageInput").value.toLowerCase();
     
-    if ()
+
+    // Ensure user has input values for every question
+    if (!honestInput || !heightInput || !ageInput) {
+      // Display error message
+      document.getElementById("errorMessage").removeAttribute("class");
+    } else {
+      // Abe is honest & tall
+      if (honestInput === "important" || heightInput === "important" && ageInput === "not important") {
+        // Display Abe
+        document.getElementById("lincoln").removeAttribute("class");
+      } else if (ageInput === "important") {
+        // Display JFK
+        document.getElementById("kennedy").removeAttribute("class");
+      } else {
+        document.getElementById("bush").removeAttribute("class");
+      }
+    }
 
   }
 }
